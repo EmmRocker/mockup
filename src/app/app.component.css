@@ -1,0 +1,57 @@
+.main {
+    height: 100%;
+}
+
+.image-logo {
+    height: 42%;
+    width: 42%;
+}
+
+.contenedor {
+    padding: 3%;
+    height: 100%;
+    background-color: rgba(230, 230, 230, 0.877);
+    border: 1px;
+    border-block-color: black;
+}
+
+.option {
+    background-color: white;
+    font: 75% sans-serif bold;
+    padding: 0.5%;
+}
+
+.font {
+    font-family: Arial, sans-serif;
+    color: rgb(95, 95, 95);
+}
+
+.option:hover {
+    background-color: #193948;
+    color: white;
+}
+
+.hr1 {
+    border: 1px solid rgb(166, 166, 166);
+}
+
+.vr {
+    border-right: 1px solid rgb(166, 166, 166);
+}
+
+.has-search .form-control {
+    padding-left: 40%;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    padding-left: 23%;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}

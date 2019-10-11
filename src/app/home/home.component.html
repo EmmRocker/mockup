@@ -1,0 +1,73 @@
+<br>
+<br>
+<div class="row">
+    <div class="offset-sm-6 col-sm-4">
+        <div class=" form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="row" style="position:relative;" *ngFor="let item of list">
+    <div class="col-md-1 d-flex justify-content-center" style="margin-top: 2.5%">
+        <fa-icon class="fa-3x" style="color: rgb(238, 141, 56);" [icon]="faCheckCircle"></fa-icon>
+    </div>
+    <div class="row col-md-9 option">
+        <div class="col-md-2">
+            <div class="vr font">
+                <h5 class="text-center" style="margin: 0">{{item.diaSemana}}</h5>
+                <h5 class="text-center" style="margin: 0">{{item.dia}}<sup>{{item.sup}}</sup> {{item.hr}}</h5>
+                <h5 class="text-center" style="margin: 0">{{item.tm}}</h5>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="vr">
+                <div class="col">
+                    <div class="d-flex justify-content-center font2">
+                        <h5 style="margin: 0">{{item.direccion1}}</h5>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row" style="padding-top: 3%;">
+                        <div class="col-md-3" style="padding-bottom: 4%;">
+                            <fa-icon class="fa-lg d-flex justify-content-center" [icon]="faLocationArrow"></fa-icon>
+                        </div>
+                        <div class="col-md-6">
+                            <fa-icon class="fa-2x d-flex justify-content-center" style="color: rgb(234, 167, 97)" [icon]="faChevronDown"></fa-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="d-flex justify-content-center font2">
+                        <h5 style="margin: 0">{{item.direccion2}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-md-6">
+            <div class="offset-col col-md-4 container">
+                <fa-icon class="fa-4x fa-flip-horizontal" style="color: rgb(133, 133, 133)" [icon]="faTruck"></fa-icon>
+            </div>
+
+            <div class="col-md-4 font2 container">
+                <h1 style="padding: 11px 0;">{{item.price}}</h1>
+            </div>
+
+            <div class=" offset-col col-md-2 container">
+                <input class="form-control red-input bg-danger text-white" value="1" type="number">
+            </div>
+
+            <div class="offset-col col-md-2 container">
+                <fa-icon class="fa-lg" style="color: rgb(117, 117, 117); padding-top: 45%; padding-right: 100%" [icon]="faEllipsisV "></fa-icon>
+            </div>
+
+        </div>
+    </div>
+</div>
+<fa-icon class="fa-7x" style="color: rgb(238, 141, 56); position: absolute; right: 14%; bottom: -5%" [icon]="faPlusCircle"></fa-icon>
